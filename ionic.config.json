@@ -1,0 +1,7 @@
+{
+  "name": "userfirm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

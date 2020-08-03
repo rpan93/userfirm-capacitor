@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>user</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModle)]="searchTerm" (ionChange)="searchChanged($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item button *ngFor="let item of (results | async) [routerLink]=['/','user']"></ion-item>
+    <ion-label text-wrap>
+      <h3>User Firm Mapping</h3>
+      {{item.userName}}
+    </ion-label>
+    
+  </ion-list>
+
+</ion-content>
